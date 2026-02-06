@@ -1,6 +1,6 @@
-import pytest
-from script.deploy import deploy
+#import pytest
+#from script.deploy import deploy
 
-@pytest.fixture
-def counter_contract():
-    return deploy()
+#@pytest.fixture
+#def counter_contract():
+#    return deploy()
