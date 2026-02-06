@@ -14,10 +14,13 @@ chain_id = 31337
 default_account_name = "anvil1"
 unsafe_password_file = "/home/augustus/Projects/UnsafePasswords/anvil"
 
+[networks.alchemy-sepolia]
+url = "$SEPOLIA_ALCHEMY_URL"
+save_to_db = false
+default_account_name = "sepolia-alchemy-cyfrin"
+explorer_uri = "https://eth-sepolia.blockscout.com/"
+explorer_type = "blockscout"
 
-[networks.sepolia]
-url = "https://ethereum-sepolia-rpc.publicnode.com"
-chain_id = 11155111
 
 [networks.zksync-sepolia]
 url = "https://sepolia.era.zksync.dev"
