@@ -6,6 +6,7 @@ dot_env = ".env"
 [networks.pyevm]
 is_zksync = false
 
+
 [networks.anvil]
 url = "http://127.0.0.1:8545"
 prompt_live = false
@@ -13,6 +14,17 @@ save_to_db = false
 chain_id = 31337
 default_account_name = "anvil1"
 unsafe_password_file = "/home/augustus/Projects/UnsafePasswords/anvil"
+
+
+[networks.anvil-zksync]
+url = "http://0.0.0.0:43473"
+prompt_live = false
+save_to_db = false
+chain_id = 260
+is_zksync = true
+default_account_name = "zksync0"
+unsafe_password_file = "/home/augustus/Projects/UnsafePasswords/zksync"
+
 
 [networks.alchemy-sepolia]
 url = "$SEPOLIA_ALCHEMY_URL"
@@ -22,10 +34,21 @@ explorer_uri = "https://eth-sepolia.blockscout.com/"
 explorer_type = "blockscout"
 
 
+[networks.sepolia-zkzyng]
+url = "$ZKSYNC_SEPOLIA_RPC_URL"
+save_to_db = false
+default_account_name = "sepolia-zksync"
+explorer_uri = "https://explorer.sepolia.zksync.dev/"
+explorer_type = "zksyncexplorer"
+
+
 [networks.zksync-sepolia]
 url = "https://sepolia.era.zksync.dev"
 chain_id = 300
 is_zksync = true
 prompt_live = true
+
+
+
 
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
